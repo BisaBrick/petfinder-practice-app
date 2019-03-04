@@ -1,0 +1,51 @@
+@import "mixins";
+
+.petFinder{
+  grid-area: petFinder;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @include textFormat(Roboto, 12px, 500);
+  text-align: center;
+
+}
+
+.petCard {
+
+  background-color: #d8d9dd;
+  width: 280px;
+  height: 420px;
+  border: 1px solid #484750;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.petCard_pic {
+  display: block;
+  clip-path: circle(30% at 50% 50%);
+  width: 320px;
+  height: 320px;
+  position: relative;
+  right: 20px;
+  object-fit: contain;
+  background-color: #00aeae;
+
+
+
+}
+
+.petCard_info{
+  background-color: darkred;
+}
+
+
+.petCard_info_name{
+  @include textFormat(Roboto, 18px, 500);
+  margin: 0px;
+  height: 50px;
+
+}
+.petCard_info_details{
+  @include textFormat(Martel, 8px, 400);
+
+}

@@ -1,0 +1,15 @@
+@import "mixins";
+
+.searchBar {
+  grid-area: searchBar;
+  display: flex;
+  flex-direction: column;
+  @include bgColor(Accent);
+
+}
+.searchBar_title{
+
+  @include textFormat(Roboto, 50px, 400);
+  text-align: center;
+  padding-top: 50px;
+}

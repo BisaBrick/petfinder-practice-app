@@ -1,0 +1,20 @@
+body{
+  margin: 0px;
+  font-size: 16px;
+}
+.wrapper{
+  display: grid;
+  width: 1200px;
+  margin: auto;
+  background-color: #6c2c13;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 65px 90px 500px 90px;
+  grid-template-areas:
+          "navBar navBar"
+          "searchBar ....."
+          "searchBar petFinder"
+          "searchBar ....."
+          "searchBar ....."
+
+}
+

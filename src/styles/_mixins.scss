@@ -1,0 +1,18 @@
+@import "variables";
+
+@function colorGet($sColor) {
+  @return map-get($colorPalette, $sColor);
+}
+@function fontGet($sFont) {
+  @return map-get($fontFamily, $sFont);
+}
+@mixin bgColor($sColor) {
+  background: colorGet($sColor);
+}
+
+@mixin textFormat($sFont, $fSize, $fWeight) {
+  font-family: fontGet($sFont);
+  font-size: $fSize;
+  font-weight: $fWeight;
+
+}
